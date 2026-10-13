@@ -1,0 +1,3 @@
+pytest==9.1.1
+# HTTP client used by Starlette's TestClient (successor of httpx).
+httpx2==2.13.1

@@ -1,0 +1,11 @@
+[project]
+name = "expense-tracker"
+version = "1.0.0"
+description = "REST API for personal expense tracking"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+# The app directory is read-only for the container user, so don't write .pytest_cache.
+addopts = "-ra -p no:cacheprovider"
